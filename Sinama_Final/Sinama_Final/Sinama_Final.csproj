@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB699E27-0CEE-4B01-B5B8-C6E2F729F2F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sinama_Final</RootNamespace>
+    <AssemblyName>Sinama_Final</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customer.cs" />
+    <Compile Include="Db_Connection.cs" />
+    <Compile Include="frm_Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Giris.Designer.cs">
+      <DependentUpon>frm_Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kayıt_Ol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kayıt_Ol.Designer.cs">
+      <DependentUpon>Kayıt_Ol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici_Ekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici_Ekrani.Designer.cs">
+      <DependentUpon>Kullanici_Ekrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriKarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriKarti.Designer.cs">
+      <DependentUpon>MusteriKarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="Proje_Kisi_Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje_Kisi_Ekle.Designer.cs">
+      <DependentUpon>Proje_Kisi_Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sec.Designer.cs">
+      <DependentUpon>Sec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks.cs" />
+    <Compile Include="Users.cs" />
+    <Compile Include="Yeni_Görev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yeni_Görev.Designer.cs">
+      <DependentUpon>Yeni_Görev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yeni_Musteri_Karti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yeni_Musteri_Karti.Designer.cs">
+      <DependentUpon>Yeni_Musteri_Karti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yeni_Projem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yeni_Projem.Designer.cs">
+      <DependentUpon>Yeni_Projem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_Giris.resx">
+      <DependentUpon>frm_Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kayıt_Ol.resx">
+      <DependentUpon>Kayıt_Ol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici_Ekrani.resx">
+      <DependentUpon>Kullanici_Ekrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriKarti.resx">
+      <DependentUpon>MusteriKarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje_Kisi_Ekle.resx">
+      <DependentUpon>Proje_Kisi_Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sec.resx">
+      <DependentUpon>Sec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yeni_Görev.resx">
+      <DependentUpon>Yeni_Görev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yeni_Musteri_Karti.resx">
+      <DependentUpon>Yeni_Musteri_Karti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yeni_Projem.resx">
+      <DependentUpon>Yeni_Projem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cvv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contract.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tasks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checking-attendance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elegant-white-background-with-shiny-lines_1017-17580.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall-wallpaper-concrete-colored-painted-textured-concept_53876-31799.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
